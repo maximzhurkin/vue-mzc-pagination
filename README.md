@@ -3,7 +3,7 @@ Simple Vue2 pagination component
 
 ![](demo.gif)
 
-[Online demo](https://codesandbox.io/s/hungry-agnesi-v4bj1?file=/src/App.vue)
+[Online demo](https://codesandbox.io/s/hungry-agnesi-v4bj1?file=/src/App.vue){:target="_blank"}
 
 ## Installation
 ```sh
