@@ -1,0 +1,33 @@
+.vue-mzc-pagination {
+  display: flex;
+}
+.vue-mzc-pagination__item {
+	display: block;
+}
+.vue-mzc-pagination__button {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #1564cf;
+  background-color: transparent;
+  background-size: 24px 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.vue-mzc-pagination__button--spred {
+  cursor: default;
+}
+.vue-mzc-pagination__button--active {
+  border-color: #1564cf;
+}
+.vue-mzc-pagination__button--disable {
+	cursor: not-allowed;
+  opacity: .5;
+}
