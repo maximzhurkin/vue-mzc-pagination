@@ -43,6 +43,16 @@ export default Vue.extend({
 </template>
 
 <style>
+html, body, #app {
+  height: 100%;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #22272E;
+}
 .custom__button--active {
   font-weight: 700;
 }

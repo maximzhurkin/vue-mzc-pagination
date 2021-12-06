@@ -2,10 +2,16 @@
   "name": "vue-mzc-pagination",
   "version": "1.0.0",
   "description": "Simple Vue2 pagination component",
+  "author": "Max Zhurkin",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maximzhurkin/vue-mzc-pagination.git"
   },
+  "bugs": {
+    "url": "https://github.com/maximzhurkin/vue-mzc-pagination/issues"
+  },
+  "homepage": "https://github.com/maximzhurkin/vue-mzc-pagination#readme",
 
   "main": "dist/vue-mzc-pagination.ssr.js",
   "browser": "dist/vue-mzc-pagination.esm.js",
