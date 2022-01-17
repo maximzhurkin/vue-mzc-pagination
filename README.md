@@ -13,8 +13,6 @@ npm install vue-mzc-pagination --save
 ## Usage
 ```js
 import VueMzcPagination from "vue-mzc-pagination";
-// styles (optional)
-import "vue-mzc-pagination/dist/vue-mzc-pagination.css"
 
 export default {
   components: {
@@ -73,27 +71,41 @@ Output HTML:
   </span>
 </div>
 ```
+Or use css variables
+```css
+.vue-mzc-pagination {
+  --vue-mzc-pagination-size: 32px;
+  --vue-mzc-pagination-width: var(--vue-mzc-pagination-size);
+  --vue-mzc-pagination-height: var(--vue-mzc-pagination-size);
+  --vue-mzc-pagination-font-size: 0.875em;
+  --vue-mzc-pagination-font-weight: 700;
+  --vue-mzc-pagination-primary-color: #539bf5;
+  --vue-mzc-pagination-background-color: transparent;
+  --vue-mzc-pagination-border-width: 1px;
+  --vue-mzc-pagination-border-radius: 4px;
+}
+```
 
 ## Offset
 You can specify the number of pages left and right, default: 1
 ```html
-<!--offset 0-->
+<!-- offset 0 -->
 <vue-mzc-pagination
   :offset="0"
   :page="5"
   :count="10"
 >
 </vue-mzc-pagination>
-<!--output-->
-<- 1 ... [5] ... 10 ->
+<!-- output -->
+<!-- <- 1 ... [5] ... 10 -> -->
 
-<!--offset 2-->
+<!-- offset 2 -->
 <vue-mzc-pagination
   :offset="2"
   :page="7"
   :count="16"
 >
 </vue-mzc-pagination>
-<!--output-->
-<- 1 ... 5 6 [7] 8 9 ... 16 ->
+<!-- output-->
+<!-- <- 1 ... 5 6 [7] 8 9 ... 16 -> -->
 ```

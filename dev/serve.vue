@@ -1,7 +1,7 @@
 <script>
 import Vue from "vue";
 import VueMzcPagination from "@/vue-mzc-pagination.vue";
-import "@/vue-mzc-pagination.css";
+import './serve.css'
 
 export default Vue.extend({
   name: "ServeDev",
@@ -41,19 +41,3 @@ export default Vue.extend({
     </vue-mzc-pagination>
   </div>
 </template>
-
-<style>
-html, body, #app {
-  height: 100%;
-}
-#app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #22272E;
-}
-.custom__button--active {
-  font-weight: 700;
-}
-</style>

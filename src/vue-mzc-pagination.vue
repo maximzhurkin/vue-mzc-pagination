@@ -29,6 +29,7 @@
           `${baseClass}__button`,
           page === current ? `${baseClass}__button--active` : '',
         ]"
+        :disabled="page === current"
         @click="change(page)"
       >
         {{ page }}
@@ -134,3 +135,58 @@ export default /*#__PURE__*/ {
   },
 };
 </script>
+
+<style>
+:root {
+  --vue-mzc-pagination-size: 32px;
+  --vue-mzc-pagination-width: var(--vue-mzc-pagination-size);
+  --vue-mzc-pagination-height: var(--vue-mzc-pagination-size);
+  --vue-mzc-pagination-font-size: 0.875em;
+  --vue-mzc-pagination-font-weight: 700;
+  --vue-mzc-pagination-primary-color: #539bf5;
+  --vue-mzc-pagination-background-color: transparent;
+  --vue-mzc-pagination-border-width: 1px;
+  --vue-mzc-pagination-border-radius: 4px;
+}
+.vue-mzc-pagination {
+  display: flex;
+}
+.vue-mzc-pagination__item {
+	display: block;
+}
+.vue-mzc-pagination__button {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  width: var(--vue-mzc-pagination-width);
+  height: var(--vue-mzc-pagination-height);
+  font-size: 0.875em;
+  font-size: var(--vue-mzc-pagination-font-size);
+  font-weight: 700;
+  font-weight: var(--vue-mzc-pagination-font-weight);
+  color: #539bf5;
+  color: var(--vue-mzc-pagination-primary-color);
+  background-color: transparent;
+  background-color: var(--vue-mzc-pagination-background-color);
+  border-width: 1px;
+  border-width: var(--vue-mzc-pagination-border-width);
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 4px;
+  border-radius: var(--vue-mzc-pagination-border-radius);
+}
+.vue-mzc-pagination__button--spred {
+  cursor: default;
+}
+.vue-mzc-pagination__button--active {
+  border-color: #539bf5;
+  border-color: var(--vue-mzc-pagination-primary-color);
+}
+.vue-mzc-pagination__button--disable {
+	cursor: not-allowed;
+  opacity: .5;
+}
+</style>
